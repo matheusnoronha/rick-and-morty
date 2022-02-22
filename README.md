@@ -1,11 +1,6 @@
-# IDOG
+# RICK and MORTY
 
 ## Descrição
-
-Sistema de gerenciamento de serviços para pets.
-
-<!-- - [Modelagem do banco de dados](docs/images/EVA_BD.png) -->
-<!-- - [Descrição da modelagem](docs/modelagem.md) -->
 
 ## Instalação
 
@@ -18,10 +13,6 @@ $ yarn install
 ```bash
 $ cp .env.example .env
 ```
-
-### Configurar o banco de dados:
-
-Crie o banco e os schemas da aplicação.
 
 ### Rodar a aplicação:
 
@@ -39,39 +30,6 @@ $ yarn start:dev
 $ yarn start:prod
 ```
 
-## Rodando os Testes
-
-### Unitário
-
-```bash
-$ yarn test
-```
-
-### E2E
-
-```bash
-$ yarn test:e2e
-```
-
-## Gerando Migrations
-
-As migrations são geradas automaticamente a partir da modelagem em `domain/models/*`.
-No entanto, algumas observações são importantes:
-
-- O TypeORM usa o código compilado para criar a migration, logo,
-  certifique-se que o mesmo, em `/dist`, está atualizado _(Pode-se fazer isso reiniciando a aplicação)_.
-- Ele também olhará o estado atual do banco para criar o que estiver diferente.
-  Certifique-se que todas as migrations foram executadas antes de gerar.
-
-```bash
-$ yarn typeorm migration:generate -n <nome_da_migration>
-```
-
-## Rodando as Migrations geradas
-
-```bash
-$ yarn typeorm migration:run
-```
 
 ## Tipos de commits
 
