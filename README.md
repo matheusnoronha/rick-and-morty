@@ -14,10 +14,6 @@ $ yarn install
 $ cp .env.example .env
 ```
 
-### Configurar o banco de dados:
-
-Crie o banco e os schemas da aplicação.
-
 ### Rodar a aplicação:
 
 ```bash
